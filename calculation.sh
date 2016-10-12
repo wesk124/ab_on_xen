@@ -2,13 +2,14 @@
 
 set -euo pipefail
 
+source pv-deploy-config.mk
 
 POSTFIX=".dat"
 TEMP="temp"
 
 echo -n "" > temp.dat;
 echo -n "" > result.csv
-for i in `seq 0 3`; do
+for i in `seq $ID $((VM_NUM-1))`; do
 	cat vm$i.dat | grep "Request" | cut -d " " -f  7 >> "temp.dat"
 done
 
