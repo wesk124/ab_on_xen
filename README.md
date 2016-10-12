@@ -21,11 +21,12 @@ average and standard deviation of data.
 ```
 ## History
 
-ver.10-10-2016: create this git repo
-ver.10-12-2016: fix buges and update  
+ver.10-10-2016: create this git repo.
+
+ver.10-12-2016: add deploying config file...
 
 ## TODO
-When the number of requests is to large, the time 
+When the number of requests is too large, the time 
 out error will occur.
 
 

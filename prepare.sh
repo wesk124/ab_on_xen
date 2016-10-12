@@ -13,7 +13,7 @@ set -euxo pipefail
 
 source "pv-deploy-config.mk";
 
-IP_BASE=`echo $GATEWAY | cut -d"." -f1-3`
+IP_BASE=`echo $GATEWAY | cut -d"." -f1-3`.
 
 echo "===> Installing the apache files to each vm..."
  ./ssh-control/install-cp/install.sh $PREFIX $ID $((VM_NUM-1)) ab_install.conf
@@ -33,7 +33,7 @@ echo "====> Run apache benchmark on dom0..."
 
 
 for i in `seq 0 $((VM_NUM-1))`; do
-	ab -n 10000 -c 50  "http://"$IP_BASE.$(($BASE_IP_NUM+$i))"/" > $PREFIX"$i".dat &
+	ab -n 10000 -c 50  "http://"$IP_BASE$(($BASE_IP_NUM+$i))"/" > $PREFIX"$i".dat &
 done
 wait
 
