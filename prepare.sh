@@ -1,5 +1,5 @@
 #!/bin/bash
-set -euo pipefail
+set -euxo pipefail
 
 # Author: Sheng Wei
 # Modified by Beichen Liu
@@ -33,7 +33,7 @@ echo "====> Run apache benchmark on dom0..."
 
 
 for i in `seq 0 $((VM_NUM-1))`; do
-	ab -n 10000 -c 50  "http://"$IP_BASE$(($BASE_IP_NUM+$i))"/" > $PREFIX"$i".dat &
+	ab -n 10000 -c 50  "http://"$IP_BASE.$(($BASE_IP_NUM+$i))"/" > $PREFIX"$i".dat &
 done
 wait
 
