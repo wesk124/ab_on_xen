@@ -29,15 +29,15 @@ wait
 
 echo "===== Finish servers setup.====="
 
-echo "====> Run apache benchmark on dom0..."
+# echo "====> Run apache benchmark on dom0..."
 
 
-for i in `seq 0 $((VM_NUM-1))`; do
-	ab -n 10000 -c 50  "http://"$IP_BASE$(($BASE_IP_NUM+$i))"/" > $PREFIX"$i".dat &
-done
-wait
+# for i in `seq 0 $((VM_NUM-1))`; do
+# 	 ab -n 10000 -c 50  "http://"$IP_BASE$(($BASE_IP_NUM+$i))"/" > $PREFIX"$i".dat &
+# done
+# wait
 
-echo "=====Finish apache benchmark, plz check datas"
+# echo "=====Finish apache benchmark, plz check datas"
 
 
 
