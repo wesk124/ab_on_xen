@@ -1,5 +1,5 @@
 #!/bin/bash
-set -euxo pipefail
+set -euo pipefail
 
 # Author: Sheng Wei
 # Modified by Beichen Liu

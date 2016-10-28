@@ -2,41 +2,41 @@ This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
 
-Benchmarking 10.0.0.5 (be patient)
+Benchmarking 10.0.0.2 (be patient)
 
 
 Server Software:        Apache/2.4.7
-Server Hostname:        10.0.0.5
+Server Hostname:        10.0.0.2
 Server Port:            80
 
 Document Path:          /
 Document Length:        11510 bytes
 
 Concurrency Level:      50
-Time taken for tests:   2.419 seconds
-Complete requests:      10000
+Time taken for tests:   0.911 seconds
+Complete requests:      2500
 Failed requests:        0
-Total transferred:      117830000 bytes
-HTML transferred:       115100000 bytes
-Requests per second:    4133.67 [#/sec] (mean)
-Time per request:       12.096 [ms] (mean)
-Time per request:       0.242 [ms] (mean, across all concurrent requests)
-Transfer rate:          47565.42 [Kbytes/sec] received
+Total transferred:      29457500 bytes
+HTML transferred:       28775000 bytes
+Requests per second:    2743.07 [#/sec] (mean)
+Time per request:       18.228 [ms] (mean)
+Time per request:       0.365 [ms] (mean, across all concurrent requests)
+Transfer rate:          31564.04 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    0   0.4      0       8
-Processing:     5   12   6.4     11     513
-Waiting:        5   12   4.0     11      55
-Total:          9   12   6.5     11     513
+Connect:        0    0   0.2      0       2
+Processing:     1   18   1.4     18      19
+Waiting:        1   18   1.4     18      19
+Total:          4   18   1.2     18      19
 
 Percentage of the requests served within a certain time (ms)
-  50%     11
-  66%     11
-  75%     11
-  80%     11
-  90%     12
-  95%     12
-  98%     25
-  99%     31
- 100%    513 (longest request)
+  50%     18
+  66%     18
+  75%     18
+  80%     18
+  90%     18
+  95%     19
+  98%     19
+  99%     19
+ 100%     19 (longest request)

@@ -11,7 +11,7 @@ XT_DIR=/root/xen-domains
 ###This part is used to deploy vms
 
 # Number of VM to deploy
-VM_NUM=4
+VM_NUM=16
 
 # Amount of memory for the VM in MB
 MEMORY=1024
@@ -28,7 +28,7 @@ VCPUS=1
 BRIDGE=xenbr0
 NETMASK=255.255.255.0
 GATEWAY=10.0.0.1
-BASE_IP_NUM=5
+BASE_IP_NUM=2
 ###
 
 

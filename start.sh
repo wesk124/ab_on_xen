@@ -19,7 +19,7 @@ function run_apache {
 
     for i in `seq 0 $((numOfServers-1))`; do 
         touch $PREFIX$i.dat;
-        ab -n 10000 -c 50  "http://"$IP_BASE$(($BASE_IP_NUM+$i))"/" >> $PREFIX$i.dat  &
+        ab -n 2500 -c 50  "http://"$IP_BASE$(($BASE_IP_NUM+$i))"/" >> $PREFIX$i.dat  &
     done
     wait
 }
