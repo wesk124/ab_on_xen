@@ -6,4 +6,5 @@ Stdev = Array(:,3);
 figure
 plot(NumofVM,Mean, NumofVM, Stdev)
 legend('Mean','Stdev')
-savefig('ab_on_Xen_plot.fig')
+saveas(gcf,'ab_on_Xen_plot.jpg')
+
