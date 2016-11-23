@@ -37,7 +37,7 @@ ver.10-21-2016: split prepare, create a new script to run the experiment
 1. When the number of requests is too large, the time 
 out error will occur.
 2. The concurrency cannot be too large either.
-3. run serveral experiments.
+3.
 
 
 
